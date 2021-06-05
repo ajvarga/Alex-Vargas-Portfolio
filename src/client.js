@@ -1,5 +1,5 @@
 // file used to talk to Sanity
-import sanityClient from '@/sanity/client'
+import sanityClient from '@sanity/client'
 
 export default sanityClient({
     projectId: "buoyug0l",
