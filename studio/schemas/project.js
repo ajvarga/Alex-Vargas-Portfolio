@@ -37,7 +37,6 @@ export default{
                         {value: 'group', title:'Group'},
                         {value: 'client', title: 'Client'},
                         {value: 'school', title: 'School'},
-
                     ],
                 },
         },
