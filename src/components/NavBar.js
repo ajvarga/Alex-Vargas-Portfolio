@@ -28,11 +28,11 @@ const NavBar = () => {
                             className="inflex-flex items-center py-3 px-3 my-6 text-red-200 hover:text-red-800">
                         Art
                     </NavLink>
-                    <NavLink to='/about'
+                    {/* <NavLink to='/about'
                             activeClassName='text-white'
                             className="inflex-flex items-center py-3 px-3 my-6 text-red-200 hover:text-red-800">
                         About Me
-                    </NavLink>
+                    </NavLink> */}
                 </nav>
                 <div className='inflex-flex py3 px3 my-6'>
                     <SocialIcon url='https://twitter.com/owl_eggs' className='mr-4' target='_blank' fgColor='#fff' style={{ height: 35, width:35 }}/>
