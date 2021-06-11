@@ -26,7 +26,7 @@ const About = () => {
     return ( 
     <main className='relative'>
         {/* <img src={ background } alt='Ghibli background' className='absolute w-full'/> */}
-        <div className='p-10 lg:pt-30 container mx-autp relative'>
+        <div className='p-8 lg:pt-30 container mx-autp relative'>
             <section className='bg-green-700 rounded-lg shadow-2xl lg:flex p-20'>
                 <img src={ urlFor(author.authorImage).url()} className='rounded w-32 h-32 lg:w-52 lg:h-52 mr-8' alt={ author.name }/>
                 <div className='text-lg flex flex-col justify-center'>

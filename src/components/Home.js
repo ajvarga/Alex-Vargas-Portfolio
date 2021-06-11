@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from '../8jQKh.jpg';
 import About from './About.js';
+import reactImg from '../react.png'
+import arrow from '../arrow.png'
 
 const Home = () => {
     return ( 
@@ -10,65 +12,75 @@ const Home = () => {
         <section className='relative flex justify-center min-h-screen pt-24 lg:pt-50 px-8'>
             {/* <h2 className='text-md text-green-50 font-bold cursive leading-non lg:leading-snug home-name'>Welcome!</h2> */}
             <About />
+            
         </section>
-        
+        <img src={ Image } alt='Birds in the Sky' className='absolute object-cover w-full h-96 md:h-full'/>
         <section>
-        <img src={ Image } alt='Birds in the Sky' className='absolute object-cover w-full h-96'/>
-            <div className='grid pr-3 pl-3 md:grid-cols-1 lg:grid-cols-3 gap-8'>
-                <span className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
-                        <span className='block relative h-full flex pb-4 bg-green-700'>
+
+        <div className='flex justify-center'>
+            <div className='bg-white w-5/12 h-14 absolute rounded-full opacity-60'>
+                <h1 className='text-black cursive text-4xl text-center pt-2'>Dev Skills</h1>
+            </div>
+        </div>
+            <div className='grid pt-20 pr-3 pl-3 md:grid-cols-1 lg:grid-cols-3 gap-8 '>
+                <span className='block my-6 ml-5 w-11/12 h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
+                        <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400'>
                             {/* <div> */}
                             <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-xl px-3 py-3 bg-red-400 text-red-100 bg-opacity-75'> <b>Front End</b></h2>
-                                
-                                    <div className='px-12 py-4'>
-                                        <h4 className='mr-12  py-3 text-lg text-white'> <b>Web Frameworks</b></h4>
-                                        <li className='ml-12 text-white'>React.js</li>
+                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center text-red-100 bg-green-900 bg-opacity-75'> <b>Front End</b></h2>
+                                <div className='block items-center'>
+                                    <div className='pr-20'>
+                                        <div className='px-12 py-3'>
+                                            <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Web Frameworks</b></h4>
+                                            <li className='ml-12 text-lg text-white'>React.js</li>
+                                        </div>
+                                        <div className='px-12'>
+                                            <h4 className='mr-12 py-3 text-xl text-white'><b>Mobile</b></h4>
+                                            <li className='ml-12 text-lg text-white'>Android</li>
+                                        </div>
                                     </div>
-                                    <div className='px-12'>
-                                        <h4 className='mr-12 py-3 text-lg text-white'><b>Mobile</b></h4>
-                                        <li className='ml-12 text-white'>Android</li>
-                                    </div>
+                                    {/* <div>
+                                        <img src={ reactImg } className='ml-20 mt-16 h-9/12 w-9/12 opacity-60'/>
+                                    </div> */}
                                 </div>
+                            </div>
                             {/* </div> */}
                         </span>
                 </span>
                 <span className='block h-70 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
-                        <span className='block relative h-full flex pb-4 bg-green-700'>
+                        <span className='block relative h-full flex pb-5 bg-gradient-to-r from-green-900 to-green-400'>
                             {/* <div> */}
                             <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-xl px-3 py-3 bg-red-400 text-red-100 bg-opacity-75'> <b>Languages</b></h2>
-                                
+                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center bg-green-900 text-red-100 bg-opacity-75'> <b>Languages</b></h2>
                                     <div className='px-12 py-4'>
-                                        <h4 className='mr-12  py-3 text-lg text-white'><b>Scripting Languages</b></h4>
-                                        <li className='ml-12 text-white'>Python</li>
-                                        <li className='ml-12 text-white'>Ruby</li>
+                                        <h4 className='mr-12  py-3 text-xl text-white'><b>Scripting Languages</b></h4>
+                                        <li className='ml-12 text-white text-lg'>Python, Ruby</li>
                                     </div>
                                     <div className='px-12'>
-                                        <h4 className='mr-12 py-3 text-lg text-white'><b>Web</b></h4>
-                                        <li className='ml-12 text-white'>Javascript, HTML, CSS</li>
+                                        <h4 className='mr-12 py-3 text-xl text-white'><b>Web</b></h4>
+                                        <li className='ml-12 text-white text-lg'>Javascript, HTML, CSS</li>
                                     </div>
                                     <div className='px-12'>
-                                        <h4 className='mr-12 py-3 text-lg text-white'><b>Databases</b></h4>
-                                        <li className='ml-12 text-white'>MySql, PostgreSQL</li>
+                                        <h4 className='mr-12 py-3 text-xl text-white'><b>Databases</b></h4>
+                                        <li className='ml-12 text-white text-lg'>MySql, PostgreSQL</li>
                                     </div>
                              </div>
                             {/* </div> */}
                         </span>
                 </span>
-                <span className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
-                        <span className='block relative h-full flex pb-4 bg-green-700'>
+                <span className='block w-11/12 h-64 ml-5 my-6 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
+                        <span className='block relative h-full flex pb-4 bg-gradient-to-r from-green-900 to-green-400'>
                             {/* <div> */}
                             <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-xl px-3 py-3 bg-red-400 text-red-100 bg-opacity-75'> <b>Back End</b></h2>
+                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center bg-green-900 text-red-100 bg-opacity-75'> <b>Back End</b></h2>
                                 
-                                    <div className='px-12 py-4'>
-                                        <h4 className='mr-12  py-3 text-lg text-white'><b>Server Frameworks</b></h4>
-                                        <li className='ml-12 text-white'>Node.js</li>
+                                    <div className='px-12 py-3'>
+                                        <h4 className='mr-12  py-3 text-xl text-white'><b>Server Frameworks</b></h4>
+                                        <li className='ml-12 text-white text-lg'>Node.js</li>
                                     </div>
                                     <div className='px-12'>
-                                        <h4 className='mr-12 py-3 text-lg text-white'><b>Cloud Hosting</b></h4>
-                                        <li className='ml-12 text-white'>Google Firebase</li>
+                                        <h4 className='mr-12 py-3 text-xl text-white'><b>Cloud Hosting</b></h4>
+                                        <li className='ml-12 text-white text-lg'>Google Firebase</li>
                                     </div>
                                 </div>
                             {/* </div> */}
@@ -76,7 +88,47 @@ const Home = () => {
                 </span>
             </div>
         </section>
-    </main>    );
+
+        
+        <section>
+        {/* <img src={ Image } alt='Birds in the Sky' className='absolute object-cover w-full h-96 md:h-full'/> */}
+
+        <div className='flex justify-center mt-16'>
+            <div className='bg-white w-5/12 h-14 absolute rounded-full opacity-60'>
+                <h1 className='text-black cursive text-4xl text-center pt-2'>Education</h1>
+            </div>
+        </div>
+            <div className='flex justify-center mt-16'>
+                <span className='block my-6 ml-5 w-3/12 h-80 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
+                        <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400'>
+                            <div className='w-full h-full'>
+                                <h2 className='text-gray-900 text-2xl px-3 py-2 text-center text-red-100 bg-green-900 bg-opacity-75'> <b>UC Santa Cruz</b></h2>
+                                <h4 className='text-gray-300 text-md px-3 text-center bg-green-900 bg-opacity-75'> <b> September 2018 - June 2020</b></h4>
+                                <div className='block items-center'>
+                                    <div className='pr-20'>
+                                        <div className='px-12 py-3'>
+                                            <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Major</b></h4>
+                                            <li className='ml-12 text-lg text-white'>BA: Computer Science</li>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    <div className='px-12'>
+                                            <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Noteworthy Courses</b></h4>
+                                            <li className='ml-12 text-md text-white'>Intro to Software Engineering</li>
+                                            <li className='ml-12 text-md text-white'>Android Development</li>
+                                            <li className='ml-12 text-md text-white'>Database Systems</li>
+                                            <li className='ml-12 text-md text-white'>Web Development</li>
+                                            <li className='ml-12 text-md text-white'>User Experience</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                </span>
+            </div>
+        </section>
+    </main>   
+     );
 }
  
 export default Home;
