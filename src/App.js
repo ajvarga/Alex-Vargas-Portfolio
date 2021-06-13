@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <NavBar />
+      <NavBar/>
         <Switch>
           <Route component={Home} path='/' exact></Route>
           <Route component={AboutMe} path='/about'></Route>
