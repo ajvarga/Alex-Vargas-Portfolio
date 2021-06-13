@@ -17,8 +17,8 @@ export default {
         },
     },
     {
-    name: 'publishedAt',
-    title: 'Published at',
+    name: 'completedAt',
+    title: 'Completed on',
     type: 'datetime',
     },
     ]
