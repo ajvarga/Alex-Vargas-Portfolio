@@ -4,7 +4,7 @@ import ImageCont from '../backgroundCont.jpg'
 export default function AboutMe() {
     return (
         <div>
-            <img src={ ImageCont } alt='Birds in the Sky' className='absolute object-cover w-full h-96 md:h-full'/>
+            
         <section>
 
         <div className='flex justify-center'>
@@ -118,7 +118,6 @@ export default function AboutMe() {
             </div>
         </section>
        
-        <img src={ ImageCont } alt='Birds in the Sky' className='absolute object-cover  md:h-full'/>
         <section>
 
         <div className='flex mt-4 justify-center'>

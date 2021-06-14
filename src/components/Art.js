@@ -31,13 +31,15 @@ const Art = () => {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {artData && artData.map((art, index) => (
                 <article>
-                    <span className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400' key={index}>
+                    <span className='block h-80 relative rounded shadow border-l-8 border-r-8 border-t-8 border-white' key={index}>
                         <img src={ art.mainImage.asset.url} alt={ art.mainImage.alt }
-                        className='w-full h-full rounded-r object-cover absolute'/>
-                        <span className='block relative h-full flex justify-end items-end pr-4 pb-4'>
-                            <h3 className='text-gray-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded'>{art.title}</h3>
-                        </span>
+                        className='w-full h-full mb-28 rounded-r object-cover absolute'/>
+                        
+                        <div className='absolute w-full h-full  flex justify-center items-end'>
+                            <h2 className='text-black w-full text-center text-xl font-blog px-3 py-4 bg-white polaroid'>{art.title}</h2>
+                        </div>
                     </span>
+                    
                 </article>
                 ))}
             </div>

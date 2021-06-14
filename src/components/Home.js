@@ -3,7 +3,7 @@ import Image from '../8jQKh.jpg';
 import ImageCont from '../backgroundCont.jpg'
 import About from './About.js';
 import Info from './AboutMe.js'
-import reactImg from '../react.png'
+import Rowlet from '../rowlet.png'
 
 
 const Home = () => {
@@ -16,10 +16,23 @@ const Home = () => {
             
             <About />
         </section>
-        
-        <Info />
+        <section style={{ backgroundImage: `url(${ImageCont})` }}>
+            {/* <img src={ ImageCont } alt='Birds in the Sky' className='absolute object-cover w-full md:h-full'/> */}
+            <Info />
 
-    </main>   
+            <div className='mt-28'>
+                <h2 className='absolute text-black text-2xl p-12 ml-12 bg-white rounded polaroid w-2/12 text-center'>Thank you again for coming by !!</h2>
+
+                <div class="w-16 mt-36 ml-12 overflow-hidden inline-block">
+                    <div class=" h-14 w-14 bg-white rounded -rotate-45 transform origin-top-left"></div>
+                </div>
+
+                <img src={ Rowlet } className='mt-30'/>
+            </div>
+        </section>
+        
+    </main>
+       
      );
 }
  

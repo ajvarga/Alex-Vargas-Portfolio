@@ -15,17 +15,17 @@ const NavBar = () => {
                     {/* might delete this page */}
                     <NavLink to='/post'
                             activeClassName='text-white'
-                            className="inflex-flex items-center py-3 px-3 my-6 text-red-200 hover:text-red-800">
+                            className="inflex-flex items-center py-3 px-3 my-6 text-red-100 hover:text-red-800">
                         Blog Posts
                     </NavLink>
                     <NavLink to='/project'
                             activeClassName='text-white'
-                            className="inflex-flex items-center py-3 px-3 my-6 text-red-200 hover:text-red-800">
+                            className="inflex-flex items-center py-3 px-3 my-6 text-red-100 hover:text-red-800">
                         Projects
                     </NavLink>
                     <NavLink to='/art'
                             activeClassName='text-white'
-                            className="inflex-flex items-center py-3 px-3 my-6 text-red-200 hover:text-red-800">
+                            className="inflex-flex items-center py-3 px-3 my-6 text-red-100 hover:text-red-800">
                         Art
                     </NavLink>
                 </nav>
