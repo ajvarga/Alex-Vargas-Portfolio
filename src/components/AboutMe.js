@@ -1,5 +1,9 @@
 import React from 'react'
-import ImageCont from '../backgroundCont.jpg'
+import ImageCont from '../backgroundCont.jpg';
+import reactImg from '../react.png';
+import pythonLogo from '../pythonLogo.png';
+import firebaseLogo from '../firebaseLogo.png'
+import ucscLogo from '../UCSC-Logo.png';
 
 export default function AboutMe() {
     return (
@@ -9,18 +13,18 @@ export default function AboutMe() {
 
         <div className='flex justify-center'>
             <div className='bg-white w-5/12 h-14 absolute rounded-full opacity-60'>
-                <h1 className='text-black cursive text-4xl text-center pt-2'>Dev Skills</h1>
+                <h1 className='text-black cursive text-4xl text-center pt-2 '>Dev Skills</h1>
             </div>
         </div>
             <div className='grid pt-20 pr-3 pl-3 md:grid-cols-1 lg:grid-cols-3 gap-8 '>
                 <span className='block my-6 ml-5 w-11/12 h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
-                        <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400'>
+                        <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400' >
                             {/* <div> */}
-                            <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center text-red-100 bg-green-900 bg-opacity-75'> <b>Front End</b></h2>
-                                <div className='block items-center'>
+                            <div className='w-full h-full absolute'  style={{ backgroundImage: `url(${reactImg})`, backgroundSize: '210px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
+                                <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Front End</b></h2>
+                                <div className='block items-center' >
                                     <div className='pr-20'>
-                                        <div className='px-12 py-3'>
+                                        <div className='px-12 py-6'>
                                             <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Web Frameworks</b></h4>
                                             <li className='ml-12 text-lg text-white'>React.js</li>
                                         </div>
@@ -40,8 +44,8 @@ export default function AboutMe() {
                 <span className='block w-11/12 h-70 ml-5 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
                         <span className='block relative h-full flex pb-5 bg-gradient-to-r from-green-900 to-green-400'>
                             {/* <div> */}
-                            <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center bg-green-900 text-red-100 bg-opacity-75'> <b>Languages</b></h2>
+                            <div className='w-full h-full'  style={{ backgroundImage: `url(${pythonLogo})`, backgroundSize: '230px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
+                                <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Languages</b></h2>
                                     <div className='px-12 py-4'>
                                         <h4 className='mr-12  py-3 text-xl text-white'><b>Scripting Languages</b></h4>
                                         <li className='ml-12 text-white text-lg'>Python, Ruby</li>
@@ -61,8 +65,8 @@ export default function AboutMe() {
                 <span className='block w-11/12 h-64 ml-5 my-6 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
                         <span className='block relative h-full flex pb-4 bg-gradient-to-r from-green-900 to-green-400'>
                             {/* <div> */}
-                            <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-2xl px-3 py-3 text-center bg-green-900 text-red-100 bg-opacity-75'> <b>Back End</b></h2>
+                            <div className='w-full h-full absolute'  style={{ backgroundImage: `url(${firebaseLogo})`, backgroundSize: '190px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
+                                <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Back End</b></h2>
                                 
                                     <div className='px-12 py-3'>
                                         <h4 className='mr-12  py-3 text-xl text-white'><b>Server Frameworks</b></h4>
@@ -70,7 +74,7 @@ export default function AboutMe() {
                                     </div>
                                     <div className='px-12'>
                                         <h4 className='mr-12 py-3 text-xl text-white'><b>Cloud Hosting</b></h4>
-                                        <li className='ml-12 text-white text-lg'>Google Firebase</li>
+                                        <li className='ml-12 text-white text-lg'>Google Firebase, AWS</li>
                                     </div>
                                 </div>
                             {/* </div> */}
@@ -88,13 +92,13 @@ export default function AboutMe() {
                 <h1 className='text-black cursive text-4xl text-center pt-2'>Education</h1>
             </div>
         </div>
-            <div className='flex justify-center mt-16'>
-                <span className='block my-6  w-3/12 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
+            <div className='flex justify-center mt-16 md: p-5'>
+                <span className='block my-6  w-1/3 relative rounded shadow leading-snug bg-white border-l-8 border-green-400 lg:w-1/3 md:w-2/3'>
                         <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400'>
                             <div className='w-full h-full'>
-                                <h2 className='text-gray-900 text-2xl px-3 py-2 text-center text-red-100 bg-green-900 bg-opacity-75'> <b>UC Santa Cruz</b></h2>
+                                <h2 className='text-white text-2xl px-3 py-2 text-center  bg-green-900 bg-opacity-75'> <b>UC Santa Cruz</b></h2>
                                 <h4 className='text-gray-300 text-md px-3 text-center bg-green-900 bg-opacity-75'> <b> September 2018 - June 2020</b></h4>
-                                <div className='block items-center'>
+                                <div className='block items-center bg-opacity-80' style={{ backgroundImage: `url(${ucscLogo})`, backgroundSize: '275px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
                                     <div className='pr-20'>
                                         <div className='px-12 py-3'>
                                             <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Major</b></h4>
@@ -128,10 +132,10 @@ export default function AboutMe() {
             <div className='flex justify-center'>
                 <div className='grid w-8/12 pt-20 pr-3 pl-3 md:grid-cols-1 lg:grid-cols-2 gap-24 '>
                     <span className='block relative  rounded shadow leading-snug bg-white border-l-8 border-green-400'>
-                            <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400'>
+                            <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400 '>
                                 {/* <div> */}
-                                <div className='w-full h-full'>
-                                    <h2 className='text-gray-900 text-2xl px-3 py-3 text-center text-red-100 bg-green-900 bg-opacity-75'> <b>Short Term</b></h2>
+                                <div className='w-full h-full' >
+                                    <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Short Term</b></h2>
                                     <div className='block items-center'>
                                         <div className='pr-20'>
                                             <div className='px-12 py-3'>
@@ -159,7 +163,7 @@ export default function AboutMe() {
                             <span className='block relative h-full flex pb-5 bg-gradient-to-r from-green-900 to-green-400'>
                                 {/* <div> */}
                                 <div className='w-full h-full'>
-                                    <h2 className='text-gray-900 text-2xl px-3 py-3 text-center bg-green-900 text-red-100 bg-opacity-75'> <b>Long Term</b></h2>
+                                    <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Long Term</b></h2>
                                         <div className='px-12 '>
                                             <h4 className='mr-12  py-3 text-xl text-white'><b>Career</b></h4>
                                             <li className='ml-12 text-white text-lg'>To have aquired a few years of professional experience</li>

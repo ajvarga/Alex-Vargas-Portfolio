@@ -40,7 +40,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <div className='flex justify-center mt-20'>
+            <div className='flex justify-center lg:mt-32 md:mt-8'>
                 <img src={ arrow } className='absolute w-20 h-20 animate-bounce'/>
             </div>
         </div>
