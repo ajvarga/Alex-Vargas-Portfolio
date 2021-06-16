@@ -16,8 +16,8 @@ const Home = () => {
         <section style={{ backgroundImage: `url(${ImageCont})` }}>
             <Info />
             <div className='mt-28'>
-                <h2 className='absolute text-black text-2xl p-12 ml-12 bg-white rounded polaroid text-center lg:w-2/12 md:w-1/3'>Thank you again for coming by !!</h2>
-                <div class="w-16 mt-36 ml-12 overflow-hidden inline-block">
+                <h2 className='absolute text-black text-2xl p-14 ml-12 bg-white rounded polaroid text-center lg:w-2/12 md:w-1/3'>Thank you again for coming by !!</h2>
+                <div class="w-16 mt-40 ml-12 overflow-hidden inline-block lg:mt-40 md:mt-48">
                     <div class=" h-14 w-14 bg-white rounded -rotate-45 transform origin-top-left"></div>
                 </div>
 

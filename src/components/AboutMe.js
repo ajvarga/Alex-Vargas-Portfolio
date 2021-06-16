@@ -4,6 +4,8 @@ import reactImg from '../react.png';
 import pythonLogo from '../pythonLogo.png';
 import firebaseLogo from '../firebaseLogo.png'
 import ucscLogo from '../UCSC-Logo.png';
+import shortLogo from '../trophy.png';
+import longLogo from '../clock.png';
 
 export default function AboutMe() {
     return (
@@ -134,10 +136,10 @@ export default function AboutMe() {
                     <span className='block relative  rounded shadow leading-snug bg-white border-l-8 border-green-400'>
                             <span className='block relative h-full flex pb-4  bg-gradient-to-r from-green-900 to-green-400 '>
                                 {/* <div> */}
-                                <div className='w-full h-full' >
+                                <div className='w-full h-full'  style={{ backgroundImage: `url(${shortLogo})`, backgroundSize: '245px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
                                     <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Short Term</b></h2>
                                     <div className='block items-center'>
-                                        <div className='pr-20'>
+                                        <div className='pr-20 mr-20 lg:mr-20 md:mr-8'>
                                             <div className='px-12 py-3'>
                                                 <h4 className='mr-12 py-3 text-xl text-white inline'> <b>Career</b></h4>
                                                 <li className='ml-12 text-lg text-white'>To land an entry/intern position and begin my developer career</li>
@@ -162,8 +164,9 @@ export default function AboutMe() {
                     <span className='block relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
                             <span className='block relative h-full flex pb-5 bg-gradient-to-r from-green-900 to-green-400'>
                                 {/* <div> */}
-                                <div className='w-full h-full'>
+                                <div className='w-full h-full'  style={{ backgroundImage: `url(${longLogo})`, backgroundSize: '230px', backgroundRepeat: 'no-repeat', backgroundPosition:'bottom right'}}>
                                     <h2 className='text-white text-2xl px-3 py-3 text-center bg-green-900 bg-opacity-75'> <b>Long Term</b></h2>
+                                    <div className='pr-20 mr-20 lg:mr-20 md:mr-6'>
                                         <div className='px-12 '>
                                             <h4 className='mr-12  py-3 text-xl text-white'><b>Career</b></h4>
                                             <li className='ml-12 text-white text-lg'>To have aquired a few years of professional experience</li>
@@ -172,10 +175,11 @@ export default function AboutMe() {
                                         </div>
                                         <div className='px-12'>
                                             <h4 className='mr-12 py-3 text-xl text-white'><b>Personal</b></h4>
-                                            <li className='ml-12 text-white text-lg'>Hone my artistic ability, and learn digital</li>
+                                            <li className='ml-12 text-white text-lg'>Hone my artistic ability, and learn digital techniques</li>
                                             <li className='ml-12 text-white text-lg'>Help a content creator obtain success in their career</li>
                                             <li className='ml-12 text-white text-lg'>Continue to purse happiness</li>
                                         </div>
+                                    </div>
                                 </div>
                                 {/* </div> */}
                             </span>
