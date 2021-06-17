@@ -177,7 +177,7 @@ export default function AboutMe() {
                                             <h4 className='mr-12 py-3 text-xl text-white'><b>Personal</b></h4>
                                             <li className='ml-12 text-white text-lg'>Hone my artistic ability, and learn digital techniques</li>
                                             <li className='ml-12 text-white text-lg'>Help a content creator obtain success in their career</li>
-                                            <li className='ml-12 text-white text-lg'>Continue to purse happiness</li>
+                                            <li className='ml-12 text-white text-lg'>Continue to pursue happiness</li>
                                         </div>
                                     </div>
                                 </div>
