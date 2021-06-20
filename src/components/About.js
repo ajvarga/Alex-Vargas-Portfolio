@@ -21,16 +21,16 @@ const About = () => {
         .catch(console.error)
     }, [])
 
-    if(!author) return <div>Fetching...</div>
+    if(!author) return <div className='text-white'>Fetching...</div>
 
     return ( 
     <main className='relative'>
         {/* <img src={ background } alt='Ghibli background' className='absolute w-full'/> */}
-        <div className='p-8 lg:pt-30 container mx-auto relative'>
-            <section className='bg-green-700 rounded-lg shadow-2xl lg:flex p-20'>
+        <div className='w-auto h-auto p-8 lg:pt-30 container mx-auto relative'>
+            <section className='bg-green-700 rounded-lg shadow-2xl lg:flex p-14 md:p-20'>
                 <img src={ urlFor(author.authorImage).url()} className='rounded w-32 h-32 lg:w-52 lg:h-52 mr-8' alt={ author.name }/>
                 <div className='text-lg flex flex-col justify-center'>
-                    <h1 className='cursive text-6xl text-green-300 mb-4'>
+                    <h1 className='cursive text-2xl lg:text-6xl text-green-300 mb-4'>
                         Hi, I'm{' '}
                         <span className='text-green-100'>{ author.name }</span>
                     </h1>
@@ -39,8 +39,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <div className='flex justify-center lg:mt-32 md:mt-8'>
-                <img src={ arrow } className='absolute w-20 h-20 animate-bounce'/>
+            <div className='flex justify-center mt-auto lg:mt-32 md:mt-8'>
+                <img src={ arrow } className='absolute w-10 h-10 lg:w-20 lg:h-20 animate-bounce'/>
             </div>
         </div>
     </main>
